@@ -1,10 +1,15 @@
 {
-  "name": "net-stat",
-  "version": "2.0.1",
+  "name": "net-stat-promise",
+  "version": "0.0.1",
   "description": "Network statistics",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/typescript/bin/tsc",
+    "watch-ts": "./node_modules/typescript/bin/tsc -w",
+    "release:patch": "npm version patch && git push && git push --tags",
+    "release:minor": "npm version minor && git push && git push --tags",
+    "release:major": "npm version major && git push && git push --tags"
   },
   "repository": {
     "type": "git",
@@ -23,5 +28,18 @@
     "url": "https://github.com/jub3i/node-net-stat/issues"
   },
   "author": "jub3i",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/fs-extra": "^9.0.1",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^10.17.27",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "fs-extra": "^9.0.1"
+  }
 }
