@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jub3i/node-net-stat"
+    "url": "https://github.com/dottgonzo/node-net-stat"
   },
   "keywords": [
     "network",
@@ -25,9 +25,9 @@
     "interface"
   ],
   "bugs": {
-    "url": "https://github.com/jub3i/node-net-stat/issues"
+    "url": "https://github.com/dottgonzo/node-net-stat/issues"
   },
-  "author": "jub3i",
+  "author": "dottgonzo",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.2.11",
